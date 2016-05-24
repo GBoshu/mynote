@@ -33,3 +33,5 @@ Some - but not all - systems modify the timeout struct so that on return from se
 
 Lots of early implementations did poll as a wrapper around select().
 
+##reference
+[orignal](https://daniel.haxx.se/docs/poll-vs-select.html)

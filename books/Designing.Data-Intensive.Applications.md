@@ -19,3 +19,5 @@ Atomicity, isolation and durability are properties of the database, whereas cons
 - by using a transaction, the application can pretend that there are no crashes (atomicity), that nobody else is concurrently accessing the database (isolation), and that storage devices are perfectly reliable (durability). Even though crashes, race conditions and disk failures do occur, the transaction abstraction hides those problems so that the application doesn’t need to worry about them.
 
 ##Chapter 9. Consistency and Consensus
+- THE IMPOSSIBILITY OF CONSENSUS: FLP--which proves that there is no algorithm which reliably achieves consensus if there is a risk that a node may crash.
+- 

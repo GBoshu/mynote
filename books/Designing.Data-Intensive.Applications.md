@@ -31,4 +31,15 @@ Atomicity, isolation and durability are properties of the database, whereas cons
 5. When the coordinator has received responses to all prepare requests, it makes the definitive decision whether to commit or abort the transaction. The coordinator must write that decision to its transaction log on disk, so that it knows which way it decided in case it subsequently crashes. This is called the commit point.
 6. Once the coordinator’s decision has been written to disk, the commit or abort request is sent to all participants. If the request fails or times out, the coordinator must retry forever until it succeeds. 
 
+### Types of distributed transaction  
 
+- Database-internal distributed transactions (replication and partitioning)  
+- Heterogeneous(异构) distributed transactions (different DB, MQ and so on)  
+
+### XA Transactions  
+XA is a standard for implementing two-phase commit across heterogeneous technologies.  
+
+### Holding locks while in doubt  
+
+- orphaned in-doubt transactions do occur
+- 
